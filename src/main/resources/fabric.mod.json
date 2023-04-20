@@ -1,0 +1,30 @@
+{
+  "schemaVersion": 1,
+  "id": "flower_power",
+  "version": "${version}",
+  "name": "FlowerPower",
+  "description": "Implements the new petals for all flowers",
+  "authors": [
+    "tomGER"
+  ],
+  "contact": {
+    "website": "https://tomger.eu",
+    "repo": "https://github.com/tumGER/flowerpower"
+  },
+  "license": "EUPL-1.2",
+  "icon": "assets/flower_power/textures/block/red_petals.png",
+  "environment": "*",
+  "entrypoints": {
+    "client": [
+      "eu.tomger.flowerpower.client.FlowerPowerClient"
+    ],
+    "main": [
+      "eu.tomger.flowerpower.FlowerPower"
+    ]
+  },
+  "depends": {
+    "fabricloader": ">=${loader_version}",
+    "fabric": "*",
+    "minecraft": "*"
+  }
+}
