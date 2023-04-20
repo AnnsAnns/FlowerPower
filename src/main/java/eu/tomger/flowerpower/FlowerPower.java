@@ -22,7 +22,7 @@ public class FlowerPower implements ModInitializer {
                     .sounds(BlockSoundGroup.PINK_PETALS)
                     .pistonBehavior(PistonBehavior.DESTROY)
     );
-    private static ItemGroup ITEM_GROUP = FabricItemGroup.builder(new Identifier("flower_power", "flower_power"))
+    private static final ItemGroup ITEM_GROUP = FabricItemGroup.builder(new Identifier("flower_power", "flower_power"))
             .icon(() -> new ItemStack(Blocks.TORCHFLOWER))
             .build();
     /**
