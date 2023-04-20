@@ -32,8 +32,6 @@ public class GenericPetalHelper {
         Registry.register(Registries.ITEM,
                 new Identifier(MOD_NAME, name),
                 new BlockItem(entry, new FabricItemSettings()));
-        ItemGroupEvents.modifyEntriesEvent(ITEM_GROUP).register(content ->
-                content.add(entry));
     }
 
 }
