@@ -23,7 +23,7 @@ public class FlowerPower implements ModInitializer {
                     .pistonBehavior(PistonBehavior.DESTROY)
     );
     private static ItemGroup ITEM_GROUP = FabricItemGroup.builder(new Identifier("flower_power", "flower_power"))
-            .icon(() -> new ItemStack(Blocks.DAMAGED_ANVIL))
+            .icon(() -> new ItemStack(Blocks.TORCHFLOWER))
             .build();
     /**
      * Runs the mod initializer.
