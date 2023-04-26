@@ -4,7 +4,6 @@ import net.fabricmc.fabric.api.item.v1.FabricItemSettings;
 import net.fabricmc.fabric.api.itemgroup.v1.ItemGroupEvents;
 import net.minecraft.block.AbstractBlock;
 import net.minecraft.block.FlowerbedBlock;
-import net.minecraft.block.Material;
 import net.minecraft.block.piston.PistonBehavior;
 import net.minecraft.item.BlockItem;
 import net.minecraft.registry.Registries;
@@ -18,7 +17,7 @@ public class GenericPetalHelper {
     public static FlowerbedBlock createNewPetal() {
         return new FlowerbedBlock(
                 AbstractBlock.Settings
-                        .of(Material.PLANT)
+                        .of() // 23w17a changed Materials
                         .noCollision()
                         .sounds(BlockSoundGroup.PINK_PETALS)
                         .pistonBehavior(PistonBehavior.DESTROY)
