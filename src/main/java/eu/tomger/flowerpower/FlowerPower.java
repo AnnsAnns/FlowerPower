@@ -15,6 +15,7 @@ import net.minecraft.util.Identifier;
 public class FlowerPower implements ModInitializer {
     public static final FlowerbedBlock RED_PETALS = GenericPetalHelper.createNewPetal();
     public static final FlowerbedBlock YELLOW_PETALS = GenericPetalHelper.createNewPetal();
+    public static final FlowerbedBlock BLUE_PETALS = GenericPetalHelper.createNewPetal();
     public static final String MOD_NAME = "flower_power";
     public static final RegistryKey<ItemGroup> ITEM_GROUP = RegistryKey.of(
             RegistryKeys.ITEM_GROUP,
@@ -28,6 +29,7 @@ public class FlowerPower implements ModInitializer {
     public void onInitialize() {
         GenericPetalHelper.registerPetal("red_petals", RED_PETALS);
         GenericPetalHelper.registerPetal("yellow_petals", YELLOW_PETALS);
+        GenericPetalHelper.registerPetal("blue_petals", BLUE_PETALS);
 
         Registry.register(Registries.ITEM_GROUP, ITEM_GROUP, FabricItemGroup.builder(
                 )
@@ -36,6 +38,7 @@ public class FlowerPower implements ModInitializer {
                 .entries((context, entries) -> {
                     entries.add(RED_PETALS);
                     entries.add(YELLOW_PETALS);
+                    entries.add(BLUE_PETALS);
                 })
                 .build());
     }

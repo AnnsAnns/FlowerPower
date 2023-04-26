@@ -1,0 +1,15 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "ingredients": [
+    {
+      "item": "minecraft:cornflower"
+    },
+    {
+      "item": "minecraft:cornflower"
+    }
+  ],
+  "result": {
+    "item": "flower_power:blue_petals",
+    "count": 4
+  }
+}
