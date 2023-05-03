@@ -14,5 +14,6 @@ public class FlowerPowerClient implements ClientModInitializer {
         BlockRenderLayerMap.INSTANCE.putBlock(FlowerPower.RED_PETALS, RenderLayer.getCutout());
         BlockRenderLayerMap.INSTANCE.putBlock(FlowerPower.YELLOW_PETALS, RenderLayer.getCutout());
         BlockRenderLayerMap.INSTANCE.putBlock(FlowerPower.BLUE_PETALS, RenderLayer.getCutout());
+        BlockRenderLayerMap.INSTANCE.putBlock(FlowerPower.ORCHID_PETALS, RenderLayer.getCutout());
     }
 }
