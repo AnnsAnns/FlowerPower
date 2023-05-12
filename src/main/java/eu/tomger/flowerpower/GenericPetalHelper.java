@@ -17,7 +17,7 @@ public class GenericPetalHelper {
     public static FlowerbedBlock createNewPetal() {
         return new FlowerbedBlock(
                 AbstractBlock.Settings
-                        .of() // 23w17a changed Materials
+                        .create() // 23w17a changed Materials
                         .noCollision()
                         .sounds(BlockSoundGroup.PINK_PETALS)
                         .pistonBehavior(PistonBehavior.DESTROY)
