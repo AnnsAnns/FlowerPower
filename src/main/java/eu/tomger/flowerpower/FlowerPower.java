@@ -20,6 +20,7 @@ public class FlowerPower implements ModInitializer {
     public static final FlowerbedBlock BLUE_PETALS = GenericPetalHelper.createNewPetal();
     public static final FlowerbedBlock ORCHID_PETALS = GenericPetalHelper.createNewPetal();
     public static final FlowerbedBlock ORANGE_PETALS = GenericPetalHelper.createNewPetal();
+    public static final FlowerbedBlock GREY_PETALS = GenericPetalHelper.createNewPetal();
     public static final String MOD_NAME = "flower_power";
     public static final RegistryKey<ItemGroup> ITEM_GROUP = RegistryKey.of(
             RegistryKeys.ITEM_GROUP,
@@ -27,11 +28,12 @@ public class FlowerPower implements ModInitializer {
     );
 
     public static final Block[] Petals  = {
-            FlowerPower.RED_PETALS,
-            FlowerPower.YELLOW_PETALS,
-            FlowerPower.BLUE_PETALS,
-            FlowerPower.ORCHID_PETALS,
-            FlowerPower.ORANGE_PETALS
+            RED_PETALS,
+            YELLOW_PETALS,
+            BLUE_PETALS,
+            ORCHID_PETALS,
+            ORANGE_PETALS,
+            GREY_PETALS,
     };
 
     /**
@@ -44,6 +46,7 @@ public class FlowerPower implements ModInitializer {
         GenericPetalHelper.registerPetal("blue_petals", BLUE_PETALS);
         GenericPetalHelper.registerPetal("orchid_petals", ORCHID_PETALS);
         GenericPetalHelper.registerPetal("orange_petals", ORANGE_PETALS);
+        GenericPetalHelper.registerPetal("grey_petals", GREY_PETALS);
 
         Registry.register(Registries.ITEM_GROUP, ITEM_GROUP, FabricItemGroup.builder()
                 .displayName(Text.translatable("itemGroup.flower_power.flower_power"))
