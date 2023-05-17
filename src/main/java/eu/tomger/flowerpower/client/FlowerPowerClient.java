@@ -8,7 +8,7 @@ import net.minecraft.client.render.RenderLayer;
 
 import java.util.Arrays;
 
-import static eu.tomger.flowerpower.FlowerPower.Petals;
+import static eu.tomger.flowerpower.Flowers.*;
 
 public class FlowerPowerClient implements ClientModInitializer {
     /**
