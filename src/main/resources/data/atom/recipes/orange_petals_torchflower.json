@@ -2,14 +2,14 @@
   "type": "minecraft:crafting_shapeless",
   "ingredients": [
     {
-      "item": "minecraft:dandelion"
+      "item": "minecraft:torchflower"
     },
     {
-      "item": "minecraft:dandelion"
+      "item": "minecraft:torchflower"
     }
   ],
   "result": {
-    "item": "flower_power:yellow_petals",
+    "item": "flower_power:orange_petals",
     "count": 4
   }
 }

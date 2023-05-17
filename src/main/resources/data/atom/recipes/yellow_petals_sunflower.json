@@ -2,14 +2,14 @@
   "type": "minecraft:crafting_shapeless",
   "ingredients": [
     {
-      "item": "minecraft:dandelion"
+      "item": "minecraft:sunflower"
     },
     {
-      "item": "minecraft:dandelion"
+      "item": "minecraft:sunflower"
     }
   ],
   "result": {
     "item": "flower_power:yellow_petals",
-    "count": 4
+    "count": 8
   }
 }
