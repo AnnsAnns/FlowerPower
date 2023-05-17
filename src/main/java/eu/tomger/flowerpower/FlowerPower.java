@@ -12,16 +12,27 @@ import net.minecraft.registry.RegistryKeys;
 import net.minecraft.text.Text;
 import net.minecraft.util.Identifier;
 
+import java.util.Arrays;
+
 public class FlowerPower implements ModInitializer {
     public static final FlowerbedBlock RED_PETALS = GenericPetalHelper.createNewPetal();
     public static final FlowerbedBlock YELLOW_PETALS = GenericPetalHelper.createNewPetal();
     public static final FlowerbedBlock BLUE_PETALS = GenericPetalHelper.createNewPetal();
     public static final FlowerbedBlock ORCHID_PETALS = GenericPetalHelper.createNewPetal();
+    public static final FlowerbedBlock ORANGE_PETALS = GenericPetalHelper.createNewPetal();
     public static final String MOD_NAME = "flower_power";
     public static final RegistryKey<ItemGroup> ITEM_GROUP = RegistryKey.of(
             RegistryKeys.ITEM_GROUP,
             new Identifier(MOD_NAME, MOD_NAME+"_group")
     );
+
+    public static final Block[] Petals  = {
+            FlowerPower.RED_PETALS,
+            FlowerPower.YELLOW_PETALS,
+            FlowerPower.BLUE_PETALS,
+            FlowerPower.ORCHID_PETALS,
+            FlowerPower.ORANGE_PETALS
+    };
 
     /**
      * Runs the mod initializer.
@@ -32,17 +43,12 @@ public class FlowerPower implements ModInitializer {
         GenericPetalHelper.registerPetal("yellow_petals", YELLOW_PETALS);
         GenericPetalHelper.registerPetal("blue_petals", BLUE_PETALS);
         GenericPetalHelper.registerPetal("orchid_petals", ORCHID_PETALS);
+        GenericPetalHelper.registerPetal("orange_petals", ORANGE_PETALS);
 
-        Registry.register(Registries.ITEM_GROUP, ITEM_GROUP, FabricItemGroup.builder(
-                )
+        Registry.register(Registries.ITEM_GROUP, ITEM_GROUP, FabricItemGroup.builder()
                 .displayName(Text.translatable("itemGroup.flower_power.flower_power"))
                 .icon(() -> new ItemStack(Blocks.TORCHFLOWER))
-                .entries((context, entries) -> {
-                    entries.add(RED_PETALS);
-                    entries.add(YELLOW_PETALS);
-                    entries.add(BLUE_PETALS);
-                    entries.add(ORCHID_PETALS);
-                })
+                .entries((context, entries) -> Arrays.stream(Petals).forEach(entries::add))
                 .build());
     }
 }
