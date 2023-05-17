@@ -37,6 +37,7 @@ public class FlowerPower implements ModInitializer {
         GenericPetalHelper.registerPetal("pink_petals", PINK_PETALS);
         GenericPetalHelper.registerPetal("white_petals", WHITE_PETALS);
         GenericPetalHelper.registerPetal("magenta_petals", MAGENTA_PETALS);
+        GenericPetalHelper.registerPetal("black_petals", BLACK_PETALS);
 
         Registry.register(Registries.ITEM_GROUP, ITEM_GROUP, FabricItemGroup.builder()
                 .displayName(Text.translatable("itemGroup.flower_power.flower_power"))

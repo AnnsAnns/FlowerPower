@@ -13,6 +13,7 @@ public class Flowers {
     public static final FlowerbedBlock PINK_PETALS = GenericPetalHelper.createNewPetal();
     public static final FlowerbedBlock WHITE_PETALS = GenericPetalHelper.createNewPetal();
     public static final FlowerbedBlock MAGENTA_PETALS = GenericPetalHelper.createNewPetal();
+    public static final FlowerbedBlock BLACK_PETALS = GenericPetalHelper.createNewPetal();
 
     public static final Block[] Petals  = {
             RED_PETALS,
@@ -23,6 +24,7 @@ public class Flowers {
             GREY_PETALS,
             PINK_PETALS,
             WHITE_PETALS,
-            MAGENTA_PETALS
+            MAGENTA_PETALS,
+            BLACK_PETALS
     };
 }
