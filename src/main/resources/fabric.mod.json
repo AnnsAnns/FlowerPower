@@ -12,7 +12,7 @@
     "repo": "https://github.com/tumGER/flowerpower"
   },
   "license": "EUPL-1.2",
-  "icon": "assets/flower_power/textures/block/red_petals.png",
+  "icon": "assets/flower_power/icon.png",
   "environment": "*",
   "entrypoints": {
     "client": [
