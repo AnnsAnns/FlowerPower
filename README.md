@@ -1,5 +1,7 @@
 # *Flower Power* - Equal Treatment for all Vanilla Minecraft Flowers
 
+![](.github/docs/repository-open-graph-template.png)
+
 Flower Power aims to implement the petal form that was/will be introduced together with the cherry blossom tree for all Vanilla flowers.
 
 [![Modrinth](https://img.shields.io/modrinth/game-versions/xVBqQudh?logo=modrinth&color=darkgreen&label=Download%20from%20Modrinth&style=for-the-badge)](https://modrinth.com/mod/flower-power)
