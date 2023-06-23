@@ -5,6 +5,7 @@ import net.fabricmc.fabric.api.itemgroup.v1.ItemGroupEvents;
 import net.minecraft.block.AbstractBlock;
 import net.minecraft.block.FlowerbedBlock;
 import net.minecraft.block.piston.PistonBehavior;
+import net.minecraft.item.AliasedBlockItem;
 import net.minecraft.item.BlockItem;
 import net.minecraft.registry.Registries;
 import net.minecraft.registry.Registry;
@@ -30,7 +31,7 @@ public class GenericPetalHelper {
                 entry);
         Registry.register(Registries.ITEM,
                 new Identifier(MOD_NAME, name),
-                new BlockItem(entry, new FabricItemSettings()));
+                new AliasedBlockItem(entry, new FabricItemSettings()));
     }
 
 }
