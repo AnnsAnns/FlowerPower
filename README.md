@@ -10,6 +10,10 @@ Flower Power aims to implement the petal form that was/will be introduced togeth
 
 ![](.github/docs/crafting_recipe.png)
 
+### Modpacks
+
+You are allowed to share the mod in your modpacks as long as you credit me :)
+
 ### License
 
 This project is licensed under EUPLv1.2 see [HERE](./LICENSE).
