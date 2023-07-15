@@ -1,0 +1,27 @@
+{
+  "schemaVersion": 1,
+  "id": "flower_power",
+  "version": "${version}",
+  "name": "Example Mod",
+  "description": "This is an example description! Tell everyone what your mod is about!",
+  "authors": [
+    "Me!"
+  ],
+  "contact": {
+    "homepage": "https://fabricmc.net/",
+    "sources": "https://github.com/FabricMC/fabric-example-mod"
+  },
+  "license": "Insert License Here",
+  "icon": "assets/flower_power/icon.png",
+  "environment": "*",
+  "entrypoints": {
+    "main": [
+      "eu.tomger.fabric.FlowerPowerFabric"
+    ]
+  },
+  "depends": {
+    "fabric": "*",
+    "minecraft": ">=1.19.4",
+    "architectury": ">=8.1.79"
+  }
+}
