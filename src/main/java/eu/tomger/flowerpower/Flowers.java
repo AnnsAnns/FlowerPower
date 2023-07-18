@@ -2,6 +2,9 @@ package eu.tomger.flowerpower;
 
 import net.minecraft.block.Block;
 import net.minecraft.block.FlowerbedBlock;
+import net.minecraft.registry.RegistryKeys;
+import net.minecraft.registry.tag.TagKey;
+import net.minecraft.util.Identifier;
 
 public class Flowers {
     public static final FlowerbedBlock RED_PETALS = GenericPetalHelper.createNewPetal();
