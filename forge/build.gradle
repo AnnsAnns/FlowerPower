@@ -7,15 +7,6 @@ architectury {
     forge()
 }
 
-loom {
-    accessWidenerPath = project(":common").loom.accessWidenerPath
-
-    forge {
-        convertAccessWideners = true
-        extraAccessWideners.add loom.accessWidenerPath.get().asFile.name
-    }
-}
-
 configurations {
     common
     shadowCommon // Don't use shadow from the shadow plugin since it *excludes* files.
@@ -34,15 +25,27 @@ dependencies {
 }
 
 processResources {
-    inputs.property "version", project.version
+    inputs.property "version", project.mod_version
 
-    filesMatching("META-INF/mods.toml") {
-        expand "version": project.version
+    filesMatching(["META-INF/mods.toml", "**/pack.mcmeta"]) {
+        expand 'mod_id': mod_id,
+                'mod_version': mod_version,
+                'mod_description': mod_description,
+                'mod_author': mod_author,
+                'mod_name': mod_name,
+                'mod_homepage': mod_homepage,
+                'mod_repository': mod_repository,
+                'mod_license': mod_license,
+                'forge_loader_version_range': forge_loader_version_range,
+                'forge_version_range': forge_version_range,
+                'min_architectury_version': min_architectury_version,
+                'minecraft_version': minecraft_version,
+                'maven_group': rootProject.maven_group
     }
 }
 
 shadowJar {
-    exclude "fabric.mod.json"
+//    exclude "fabric.mod.json"
     exclude "architectury.common.json"
 
     configurations = [project.configurations.shadowCommon]

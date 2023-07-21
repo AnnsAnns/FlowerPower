@@ -1,27 +1,35 @@
 {
   "schemaVersion": 1,
-  "id": "flower_power",
-  "version": "${version}",
-  "name": "Example Mod",
-  "description": "This is an example description! Tell everyone what your mod is about!",
+  "id": "${mod_id}",
+  "version": "${mod_version}",
+
+  "name": "${mod_name}",
+  "description": "${mod_description}",
   "authors": [
-    "Me!"
+    "${mod_author}"
   ],
+
   "contact": {
-    "homepage": "https://fabricmc.net/",
-    "sources": "https://github.com/FabricMC/fabric-example-mod"
+    "source": "${mod_repository}",
+    "issues": "${mod_repository}/issues",
+    "website": "${mod_homepage}"
   },
-  "license": "Insert License Here",
-  "icon": "assets/flower_power/icon.png",
+
+  "license": "${mod_license}",
+  "icon": "assets/${mod_id}/icon.png",
+
   "environment": "*",
   "entrypoints": {
     "main": [
-      "eu.tomger.fabric.FlowerPowerFabric"
+      "eu.tomger.flowerpower.FlowerPower::initialize"
+    ],
+    "client": [
+      "eu.tomger.flowerpower.fabric.FlowerPowerClientRenderer"
     ]
   },
   "depends": {
-    "fabric": "*",
-    "minecraft": ">=1.19.4",
-    "architectury": ">=8.1.79"
+    "fabricloader": ">=${fabric_loader_version}",
+    "minecraft": ">=${minecraft_version}",
+    "architectury": ">=${min_architectury_version}"
   }
 }

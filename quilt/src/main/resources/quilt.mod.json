@@ -1,22 +1,27 @@
 {
   "schema_version": 1,
   "quilt_loader": {
-    "group": "${group}",
-    "id": "flower_power",
-    "version": "${version}",
-    "name": "F Mod",
-    "description": "This is an example description! Tell everyone what your mod is about!",
-    "authors": ["Me!"],
+    "group": "${maven_group}",
+    "id": "${mod_id}",
+    "version": "${mod_version}",
+    "name": "${mod_name}",
+    "description": "${mod_description}",
+    "authors": ["${mod_author}"],
     "contact": {
-      "sources": "https://github.com/architectury/architectury-templates"
+      "sources": "${mod_repository}",
+      "issues": "${mod_repository}/issues",
+      "website": "${mod_homepage}"
     },
-    "license": "Insert License Here",
-    "icon": "assets/flower_power/icon.png",
+    "license": "${mod_license}",
+    "icon": "assets/${mod_id}/icon.png",
     "intermediate_mappings": "net.fabricmc:intermediary",
     "environment": "*",
     "entrypoints": {
       "init": [
-        "eu.tomger.quilt.FlowerPowerQuilt"
+        "eu.tomger.flowerpower.FlowerPower::initialize"
+      ],
+      "client": [
+        "eu.tomger.flowerpower.quilt.FlowerPowerClientRenderer"
       ]
     },
     "depends": [
@@ -30,11 +35,11 @@
       },
       {
         "id": "minecraft",
-        "version": ">=1.20.1"
+        "version": ">=${minecraft_version}"
       },
       {
         "id": "architectury",
-        "version": ">=9.0.79"
+        "version": ">=${min_architectury_version}"
       }
     ]
   }

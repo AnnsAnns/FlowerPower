@@ -1,35 +1,36 @@
-modLoader = "javafml"
-loaderVersion = "[45,)"
-#issueTrackerURL = ""
-license = "Insert License Here"
+modLoader="javafml"
+loaderVersion="${forge_loader_version_range}"
+license="${mod_license}"
+issueTrackerURL="${mod_repository}/issues"
 
 [[mods]]
-modId = "flower_power"
-version = "${version}"
-displayName = "Flower Power Mod"
-authors = "tomGER"
-description = '''
-This is an example description! Tell everyone what your mod is about!
-'''
-#logoFile = ""
+modId="${mod_id}"
+version="${mod_version}"
+displayName="${mod_name}"
+#updateJSONURL="http://myurl.me/"
+displayURL="${mod_homepage}"
+logoFile="assets/${mod_id}/icon.png"
+authors="${mod_author}"
+description='''${mod_description}'''
 
-[[dependencies.flower_power]]
-modId = "forge"
-mandatory = true
-versionRange = "[45,)"
-ordering = "NONE"
-side = "BOTH"
+# Dependencies
+[[dependencies.${mod_id}]]
+modId="forge"
+mandatory=true
+versionRange="${forge_version_range}"
+ordering="NONE"
+side="BOTH"
 
-[[dependencies.flower_power]]
-modId = "minecraft"
-mandatory = true
-versionRange = "[1.19.4,)"
-ordering = "NONE"
-side = "BOTH"
+[[dependencies.${mod_id}]]
+modId="minecraft"
+mandatory=true
+versionRange="[1.20,1.21)"
+ordering="NONE"
+side="BOTH"
 
-[[dependencies.flower_power]]
-modId = "architectury"
-mandatory = true
-versionRange = "[8.1.79,)"
-ordering = "AFTER"
-side = "BOTH"
+[[dependencies.${mod_id}]]
+modId="architectury"
+mandatory=true
+versionRange="[${min_architectury_version},)"
+ordering="AFTER"
+side="BOTH"

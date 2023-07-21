@@ -1,4 +1,4 @@
-package eu.tomger;
+package eu.tomger.flowerpower;
 
 import dev.architectury.injectables.annotations.ExpectPlatform;
 import dev.architectury.platform.Platform;
@@ -13,9 +13,10 @@ public class FlowerPowerExpectPlatform {
      * platform sub-package, with its class suffixed with {@code Impl}.
      * <p>
      * Example:
-     * Expect: eu.tomger.ExampleExpectPlatform#getConfigDirectory()
-     * Actual Fabric: eu.tomger.fabric.ExampleExpectPlatformImpl#getConfigDirectory()
-     * Actual Forge: eu.tomger.forge.ExampleExpectPlatformImpl#getConfigDirectory()
+     * Expect: eu.tomger.flowerpower.FlowerPowerExpectPlatform#getConfigDirectory()
+     * Actual Fabric: eu.tomger.flowerpower.fabric.FlowerPowerExpectPlatformImpl#getConfigDirectory()
+     * Actual Forge: eu.tomger.flowerpower.forge.FlowerPowerExpectPlatformImpl#getConfigDirectory()
+     * Actual Quilt: eu.tomger.flowerpower.quilt.FlowerPowerExpectPlatformImpl#getConfigDirectory()
      * <p>
      * <a href="https://plugins.jetbrains.com/plugin/16210-architectury">You should also get the IntelliJ plugin to help with @ExpectPlatform.</a>
      */
