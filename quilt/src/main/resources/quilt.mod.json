@@ -4,42 +4,41 @@
     "group": "${maven_group}",
     "id": "${mod_id}",
     "version": "${mod_version}",
-    "name": "${mod_name}",
-    "description": "${mod_description}",
-    "authors": ["${mod_author}"],
-    "contact": {
-      "sources": "${mod_repository}",
-      "issues": "${mod_repository}/issues",
-      "website": "${mod_homepage}"
+    "metadata": {
+      "name": "${mod_name}",
+      "description": "${mod_description}",
+      "contributors": {
+        "${mod_author}": "Owner"
+      },
+      "contact": {
+        "homepage": "${mod_homepage}",
+        "sources": "${mod_repository}",
+        "issues": "${mod_repository}/issues"
+      },
+      "license": "${mod_license}",
+      "icon": "assets/${mod_id}/icon.png"
     },
-    "license": "${mod_license}",
-    "icon": "assets/${mod_id}/icon.png",
     "intermediate_mappings": "net.fabricmc:intermediary",
-    "environment": "*",
     "entrypoints": {
-      "init": [
-        "eu.tomger.flowerpower.FlowerPower::initialize"
-      ],
-      "client": [
-        "eu.tomger.flowerpower.quilt.FlowerPowerClientRenderer"
-      ]
+      "init": "eu.tomger.flowerpower.quilt.FlowerPowerQuilt",
+      "client": "eu.tomger.flowerpower.quilt.client.FlowerPowerClientRenderer"
     },
     "depends": [
       {
         "id": "quilt_loader",
-        "version": "*"
+        "versions": ">=${quilt_loader_version}"
       },
       {
-        "id": "quilt_base",
-        "version": "*"
+        "id": "quilted_fabric_api",
+        "versions": ">=${min_quilt_api_version}"
       },
       {
         "id": "minecraft",
-        "version": ">=${minecraft_version}"
+        "versions": ">=${minecraft_version}"
       },
       {
         "id": "architectury",
-        "version": ">=${min_architectury_version}"
+        "versions": ">=${min_architectury_version}"
       }
     ]
   }

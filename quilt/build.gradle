@@ -47,6 +47,7 @@ processResources {
                 'mod_repository': mod_repository,
                 'mod_license': mod_license,
                 'quilt_api_version': quilt_api_version,
+                'min_quilt_api_version': min_quilt_api_version,
                 'quilt_loader_version': quilt_loader_version,
                 'min_architectury_version': min_architectury_version,
                 'minecraft_version': minecraft_version,
