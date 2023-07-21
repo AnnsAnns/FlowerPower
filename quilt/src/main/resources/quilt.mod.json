@@ -1,0 +1,46 @@
+{
+  "schema_version": 1,
+  "quilt_loader": {
+    "group": "${maven_group}",
+    "id": "${mod_id}",
+    "version": "${mod_version}",
+    "name": "${mod_name}",
+    "description": "${mod_description}",
+    "authors": ["${mod_author}"],
+    "contact": {
+      "sources": "${mod_repository}",
+      "issues": "${mod_repository}/issues",
+      "website": "${mod_homepage}"
+    },
+    "license": "${mod_license}",
+    "icon": "assets/${mod_id}/icon.png",
+    "intermediate_mappings": "net.fabricmc:intermediary",
+    "environment": "*",
+    "entrypoints": {
+      "init": [
+        "eu.tomger.flowerpower.FlowerPower::initialize"
+      ],
+      "client": [
+        "eu.tomger.flowerpower.quilt.FlowerPowerClientRenderer"
+      ]
+    },
+    "depends": [
+      {
+        "id": "quilt_loader",
+        "version": "*"
+      },
+      {
+        "id": "quilt_base",
+        "version": "*"
+      },
+      {
+        "id": "minecraft",
+        "version": ">=${minecraft_version}"
+      },
+      {
+        "id": "architectury",
+        "version": ">=${min_architectury_version}"
+      }
+    ]
+  }
+}
