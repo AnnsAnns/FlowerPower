@@ -36,6 +36,7 @@ processResources {
                 'mod_homepage': mod_homepage,
                 'mod_repository': mod_repository,
                 'mod_license': mod_license,
+                'forge_loader_version': forge_loader_version,
                 'forge_loader_version_range': forge_loader_version_range,
                 'forge_version_range': forge_version_range,
                 'min_architectury_version': min_architectury_version,
