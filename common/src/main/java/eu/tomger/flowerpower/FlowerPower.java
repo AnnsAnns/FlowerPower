@@ -11,14 +11,6 @@ public class FlowerPower {
     public static final String MOD_ID = "flower_power";
     public static final Logger LOGGER = LoggerFactory.getLogger(MOD_ID);
 
-    public static void initializeClient() {
-        Arrays.stream(FlowerRegistry.Petals).forEach(blockSupplier -> {
-                    var block = blockSupplier.get();
-                    FlowerLayerManager.INSTANCE.putBlock(block, RenderType.cutout());
-                    FlowerPower.LOGGER.info("Registered block '" + block.getName().getString() + "'.");
-                }
-        );
-    }
     public static void initialize() {
         FlowerRegistry.initialize();
     }
