@@ -1,4 +1,5 @@
 {
+  "render_type": "minecraft:cutout",
   "parent": "minecraft:block/flowerbed_2",
   "textures": {
     "flowerbed": "flower_power:block/black_petals",
