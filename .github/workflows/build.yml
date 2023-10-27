@@ -20,8 +20,6 @@ jobs:
     steps:
       - name: checkout repository
         uses: actions/checkout@v3
-      - name: switch to fabric repo
-        run: cd ./fabric
       - name: validate gradle wrapper
         uses: gradle/wrapper-validation-action@v1
       - name: setup jdk ${{ matrix.java }}
@@ -31,7 +29,9 @@ jobs:
           distribution: 'microsoft'
       - name: make gradle wrapper executable
         if: ${{ runner.os != 'Windows' }}
-        run: chmod +x ./gradlew
+        run: chmod +x ./fabric/gradlew
+      - name: Switch to fabric folder
+        run: cd ./fabric
       - name: build
         run: ./gradlew build
       - name: capture build artifacts
