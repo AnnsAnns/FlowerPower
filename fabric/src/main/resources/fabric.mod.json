@@ -16,10 +16,10 @@
   "environment": "*",
   "entrypoints": {
     "client": [
-      "eu.tomger.flowerpower.client.FlowerPowerClient"
+      "eu.annsann.flowerpower.client.FlowerPowerClient"
     ],
     "main": [
-      "eu.tomger.flowerpower.FlowerPower"
+      "eu.annsann.flowerpower.FlowerPower"
     ]
   },
   "depends": {

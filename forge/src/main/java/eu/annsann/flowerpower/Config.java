@@ -1,4 +1,4 @@
-package com.example.examplemod;
+package eu.annsann.flowerpower;
 
 import net.minecraft.resources.ResourceLocation;
 import net.minecraft.world.item.Item;
