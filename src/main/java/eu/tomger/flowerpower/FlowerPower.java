@@ -20,7 +20,7 @@ public class FlowerPower implements ModInitializer {
     public static final String MOD_NAME = "flower_power";
     public static final RegistryKey<ItemGroup> ITEM_GROUP = RegistryKey.of(
             RegistryKeys.ITEM_GROUP,
-            new Identifier(MOD_NAME, MOD_NAME+"_group")
+            new Identifier(MOD_NAME, MOD_NAME + "_group")
     );
 
     /**
