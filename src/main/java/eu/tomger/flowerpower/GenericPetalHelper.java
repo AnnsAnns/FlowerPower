@@ -31,7 +31,7 @@ public class GenericPetalHelper {
                 entry);
         Registry.register(Registries.ITEM,
                 new Identifier(MOD_NAME, name),
-                new BlockItem   (entry, new FabricItemSettings()));
+                new BlockItem(entry, new FabricItemSettings()));
     }
 
 }
