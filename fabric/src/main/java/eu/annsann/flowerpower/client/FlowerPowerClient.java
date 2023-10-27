@@ -1,6 +1,6 @@
-package eu.tomger.flowerpower.client;
+package eu.annsann.flowerpower.client;
 
-import eu.tomger.flowerpower.FlowerPower;
+import eu.annsann.flowerpower.FlowerPower;
 import net.fabricmc.api.ClientModInitializer;
 import net.fabricmc.fabric.api.blockrenderlayer.v1.BlockRenderLayerMap;
 import net.minecraft.block.Block;
@@ -8,7 +8,7 @@ import net.minecraft.client.render.RenderLayer;
 
 import java.util.Arrays;
 
-import static eu.tomger.flowerpower.Flowers.*;
+import static eu.annsann.flowerpower.Flowers.*;
 
 public class FlowerPowerClient implements ClientModInitializer {
     /**

@@ -1,4 +1,4 @@
-package eu.tomger.flowerpower;
+package eu.annsann.flowerpower;
 
 import net.fabricmc.api.ModInitializer;
 import net.fabricmc.fabric.api.itemgroup.v1.FabricItemGroup;
@@ -14,7 +14,7 @@ import net.minecraft.util.Identifier;
 
 import java.util.Arrays;
 
-import static eu.tomger.flowerpower.Flowers.*;
+import static eu.annsann.flowerpower.Flowers.*;
 
 public class FlowerPower implements ModInitializer {
     public static final String MOD_NAME = "flower_power";

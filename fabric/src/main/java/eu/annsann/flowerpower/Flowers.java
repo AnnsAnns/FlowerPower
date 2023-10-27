@@ -1,4 +1,4 @@
-package eu.tomger.flowerpower;
+package eu.annsann.flowerpower;
 
 import net.minecraft.block.Block;
 import net.minecraft.block.FlowerbedBlock;

@@ -8,18 +8,18 @@
     "tomGER"
   ],
   "contact": {
-    "website": "https://tomger.eu",
-    "repo": "https://github.com/tumGER/flowerpower"
+    "website": "https://annsann.eu",
+    "repo": "https://github.com/annsanns/flowerpower"
   },
   "license": "EUPL-1.2",
   "icon": "assets/flower_power/icon.png",
   "environment": "*",
   "entrypoints": {
     "client": [
-      "eu.tomger.flowerpower.client.FlowerPowerClient"
+      "eu.annsann.flowerpower.client.FlowerPowerClient"
     ],
     "main": [
-      "eu.tomger.flowerpower.FlowerPower"
+      "eu.annsann.flowerpower.FlowerPower"
     ]
   },
   "depends": {
