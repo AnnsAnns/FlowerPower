@@ -1,4 +1,4 @@
-package eu.annsann.flowerpower;
+package eu.annsann.flower_power;
 
 import net.minecraft.resources.ResourceLocation;
 import net.minecraft.world.item.Item;
