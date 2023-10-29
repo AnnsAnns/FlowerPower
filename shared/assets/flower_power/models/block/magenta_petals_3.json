@@ -1,6 +1,6 @@
 {
   "parent": "minecraft:block/flowerbed_3",
-  "textures": {
+  "render_type": "cutout",
     "flowerbed": "flower_power:block/magenta_petals",
     "stem": "flower_power:block/red_petals_stem"
   }
