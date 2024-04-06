@@ -1,0 +1,16 @@
+{
+  "replace": false,
+  "values": [
+    "minecraft:pink_petals",
+    "flower_power:red_petals",
+    "flower_power:yellow_petals",
+    "flower_power:blue_petals",
+    "flower_power:orchid_petals",
+    "flower_power:orange_petals",
+    "flower_power:grey_petals",
+    "flower_power:pink_petals",
+    "flower_power:white_petals",
+    "flower_power:magenta_petals",
+    "flower_power:black_petals"
+  ]
+}
