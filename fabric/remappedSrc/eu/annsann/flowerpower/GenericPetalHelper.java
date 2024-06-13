@@ -27,10 +27,10 @@ public class GenericPetalHelper {
 
     public static void registerPetal(String name, FlowerbedBlock entry) {
         Registry.register(Registries.BLOCK,
-                Identifier.of(MOD_NAME, name),
+                new Identifier(MOD_NAME, name),
                 entry);
         Registry.register(Registries.ITEM,
-                Identifier.of(MOD_NAME, name),
+                new Identifier(MOD_NAME, name),
                 new BlockItem(entry, new Item.Settings()));
     }
 
